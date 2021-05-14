@@ -27,16 +27,16 @@ You can also install by downloading this repository:
 ### Windows
  - Choose the branch you want. We recommend you use the Staging branch, for the latest "stable" content.
  - Clone the branch into your local mod folder `C:/Users/{YOUR_USER}/Documents/Paradox Interactive/Stellaris/mod`, or download a zip and extract it there.
- - Rename the downloaded folder to "retile" if it is named anything else (such as "retile-staging")
- - Move the "retile.mod" file from the "retile" folder out into the mod folder.
+ - Rename the downloaded folder to "retile" if it is named anything else (such as "stellarisimmortal-staging")
+ - Move the "stellarisimmortal.mod" file from the "stellarisimmortal" folder out into the mod folder.
  - When you're finished, you should see the following paths:
-   - /mod/retile/readme.md
-   - /mod/retile.mod
+   - /mod/stellarisimmortal/readme.md
+   - /mod/stellarisimmortal.mod
 
 ### Linux
 
 ```bash
 cd ".local/share/Paradox Interactive/Stellaris/mod"
-git clone https://github.com/Stellaris-Immortal/retile.git
-ln retile/retile.mod .
+git clone https://github.com/Stellaris-Immortal/stellarisimmortal.git
+ln retile/stellarisimmortal.mod .
 ```
