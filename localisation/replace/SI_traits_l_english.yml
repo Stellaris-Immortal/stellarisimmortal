@@ -1,0 +1,22 @@
+﻿l_english:
+# Species Traits
+ trait_very_weak:0 "Very Weak"
+ trait_very_weak_desc:0 "§LMembers of this species are so physically fragile they are utterly unfit for combat or hard labor.§!\n"
+ trait_innovative:0 "Innovative"
+ trait_innovative_desc:0 "§LMembers of this species are gifted at producing goods from raw materials.§!\n"
+ trait_inventive:0 "Inventive"
+ trait_inventive_effect:0 "Engineers produce §G+1§! £alloys£ Alloys and §G+1§! £consumer_goods£ Supplies\nLeader Experience Gain: §G+25%§!"
+ trait_inventive_desc:0 "§LMembers of this species are particularly adept at finding practical solutions to new problems.§!\n"
+ trait_mindless:0 "Mindless"
+ trait_mindless_desc:0 "§LIt's a wonder that this species made it into space at all.§!"
+# Robot Traits
+ trait_robot_industrial:0 "Industrial"
+ trait_robot_industrial_desc:0 "§LThese machines are designed for the efficient production of goods from raw materials.§!\n"
+# Leader Traits
+ leader_trait_ecologist:0 "Ecologist"
+ leader_trait_ecologist_desc:0 "One of the few government workers who actually cleans up after themself. Not popular at parties, but popular after them."
+# Ruler Trait
+ trait_ruler_ship_focus:0 "Ship Focus"
+ trait_ruler_ship_focus_desc:0 "This leader is focused on the effecient expansion of the navy."
+ trait_ruler_environmentalist:0 "Environmentalist"
+ trait_ruler_environmentalist_desc:0 "A focus on environmental policy prioritizes a healthy and sustainable society."

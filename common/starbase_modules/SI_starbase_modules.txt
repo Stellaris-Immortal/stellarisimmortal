@@ -1,0 +1,142 @@
+solar_panels = {
+	icon = "GFX_starbase_solar_panels"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 360
+	initial = yes
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_power_hub_1 }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_energy_station"
+			solar_system = {
+				any_system_planet = { is_star = yes }
+			}
+		}
+	}
+	
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+		produces = {
+			energy = 4
+		}
+	}
+	
+	show_in_tech = "tech_power_hub_1"
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			solar_system = {
+				any_system_planet = {
+					habitable_planet = yes
+				}
+			}
+		}
+	}
+}
+
+mining_terminal = {
+	icon = "GFX_starbase_mining_terminal"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 360
+	initial = no
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_mining_1 }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_mineral_station"
+			solar_system = {
+				any_system_planet = {
+					is_planet_class = pc_asteroid
+				}
+			}
+		}
+	}
+	
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+		produces = {
+			minerals = 4
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	show_in_tech = "tech_space_mining_1"
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			solar_system = {
+				any_system_planet = {
+					habitable_planet = yes
+				}
+			}
+		}
+	}
+}
+
+research_terminal = {
+	icon = "GFX_starbase_research_terminal"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 360
+	initial = no
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_science_2 }
+	}
+	
+	possible = {
+		owner = { has_technology = tech_space_science_1 }
+	}
+	
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+		produces = {
+			physics_research = 1
+			engineering_research = 1
+			society_research = 1
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	show_in_tech = "tech_space_science_2"
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			solar_system = {
+				any_system_planet = {
+					habitable_planet = yes
+				}
+			}
+		}
+	}
+}

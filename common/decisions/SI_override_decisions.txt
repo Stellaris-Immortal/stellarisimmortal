@@ -1,0 +1,26 @@
+decision_planet_luxuries_boost = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_luxuries
+
+	resources = {
+		category = decisions
+		cost = { consumer_goods = 100 }
+	}
+
+	potential = {
+		always = no
+	}
+
+	allow = {
+		NOT = { has_modifier = planet_luxuries_boost }
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_luxuries_boost" days = 3600 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

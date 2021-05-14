@@ -1,0 +1,9 @@
+﻿l_english:
+# Job Type
+ planet_domestic:0 "Domestic Jobs"
+# Jobs
+ job_domestic:0 "Domestic"
+ job_domestic_plural:0 "Domestic Workers"
+ mod_job_domestic_add:0 "Domestic Jobs"
+ mod_job_domestic_per_pop_short:0 "\n§G+1§! £mod_job_domestic_add£ per $VALUE$ £pop£"
+ job_domestic_desc:0 "Workers who perform household rather than market labor to regenerate the labor force of a society."

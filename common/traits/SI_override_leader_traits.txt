@@ -1,0 +1,612 @@
+# Generic
+
+leader_trait_stubborn = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_stubborn.dds"
+	self_modifier = {
+		leaders_cost_mult = 0.50
+		leaders_upkeep_mult = 0.50
+	}
+	leader_potential_add = {
+		NOT = { leader_class = ruler}
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	leader_class = { admiral scientist general governor }
+	opposites = { "leader_trait_adaptable" }
+	leader_trait = all
+	initial = no
+	randomized = no
+}
+
+leader_trait_arrested_development = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_arrested_development.dds"
+	self_modifier = {
+		species_leader_exp_gain = -0.5
+	}
+	leader_potential_add = {
+		NOT = { leader_class = ruler}
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	leader_class = { admiral scientist general governor }
+	leader_trait = all
+	initial = no
+	randomized = no
+}
+
+# Governor
+
+leader_trait_environmental_engineer = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_environmental_engineer.dds"
+	modifier = {
+		pop_environment_tolerance = 0.10
+		deposit_blockers_cost_mult = -0.25
+		planet_clear_blocker_time_mult = -0.25
+	}
+	leader_potential_add = {
+		NOT = { from = { has_authority = "auth_machine_intelligence" } }
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+}
+
+# Ruler
+
+trait_ruler_corvette_focus = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_corvette_focus.dds"
+	leader_potential_add = { always = no }
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.10
+		ship_corvette_cost_mult = -0.10
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}
+
+trait_ruler_destroyer_focus = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_destroyer_focus.dds"
+	leader_potential_add = { always = no }
+	modifier = {
+		# Removed Trait
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}
+
+trait_ruler_cruiser_focus = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_cruiser_focus.dds"
+	leader_potential_add = { always = no }
+	modifier = {
+		# Removed Trait
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}
+
+trait_ruler_battleship_focus = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_battleship_focus.dds"
+	leader_potential_add = { always = no }
+	modifier = {
+		# Removed Trait
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}
+
+# Scientist
+
+leader_trait_careful = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_careful.dds"
+	modifier = {
+		ship_sensor_range_add = 1
+		shipclass_science_ship_disengage_mult = 0.25
+	}
+	leader_potential_add = {
+		NOT = { has_trait = trait_fleeting }
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = { "leader_trait_carefree" }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}
+
+leader_trait_maniacal = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maniacal.dds"
+	modifier = {
+		all_technology_research_speed = 0.10
+		science_ship_survey_speed = 0.10
+		ship_anomaly_research_speed_mult = 0.10
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	# increased chance to discover risky techs (weighted in tech-script)
+
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+
+	ai_weight = {
+		weight = 110
+	}
+}
+
+leader_trait_spark_of_genius = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_spark_of_genius.dds"
+	modifier = {
+		all_technology_research_speed = 0.15
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	# increased chance to discover rare techs (weighted in tech-script)
+
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+leader_trait_expertise_materials = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+	modifier = {
+		category_materials_research_speed_mult = 0.15
+		category_propulsion_research_speed_mult = 0.05
+		category_industry_research_speed_mult = 0.05
+		category_voidcraft_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_military_theory"
+		"leader_trait_expertise_new_worlds"
+	}
+	# higher chance to generate techs in category materials (done in tech-script)
+
+	ai_categories = {
+		engineering
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_propulsion = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_propulsion.dds"
+	modifier = {
+		category_propulsion_research_speed_mult = 0.15
+		category_industry_research_speed_mult = 0.05
+		category_voidcraft_research_speed_mult = 0.05
+		category_materials_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category propulsion (done in tech-script)
+
+	ai_categories = {
+		engineering
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_voidcraft = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+	modifier = {
+		category_voidcraft_research_speed_mult = 0.15
+		category_propulsion_research_speed_mult = 0.05
+		category_materials_research_speed_mult = 0.05
+		category_industry_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category zero-g structures (done in tech-script)
+
+	ai_categories = {
+		engineering
+	}
+
+	ai_weight = {
+		weight = 70
+	}
+}
+
+leader_trait_expertise_industry = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+	modifier = {
+		category_industry_research_speed_mult = 0.15
+		category_voidcraft_research_speed_mult = 0.05
+		category_propulsion_research_speed_mult = 0.05
+		category_materials_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category planetary structures (done in tech-script)
+
+	ai_categories = {
+		engineering
+	}
+
+	ai_weight = {
+		weight = 70
+	}
+}
+
+leader_trait_expertise_field_manipulation = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_field_manipulation.dds"
+	modifier = {
+		category_field_manipulation_research_speed_mult = 0.15
+		category_particles_research_speed_mult = 0.05
+		category_computing_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category field manipulation (done in tech-script)
+
+	ai_categories = {
+		physics
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_particles = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_particles.dds"
+	modifier = {
+		category_particles_research_speed_mult = 0.15
+		category_field_manipulation_research_speed_mult = 0.05
+		category_computing_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+
+	ai_categories = {
+		physics
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_computing = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+	modifier = {
+		category_computing_research_speed_mult = 0.15
+		category_particles_research_speed_mult = 0.05
+		category_field_manipulation_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category computing (done in tech-script)
+
+	ai_categories = {
+		physics
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_psionics = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
+	modifier = {
+		category_psionics_research_speed_mult = 0.15
+		category_new_worlds_research_speed_mult = 0.05
+		category_statecraft_research_speed_mult = 0.05
+		category_biology_research_speed_mult = 0.05
+		category_military_theory_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	prerequisites = { tech_psionic_theory }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category psionics (done in tech-script)
+
+	ai_categories = {
+		society
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_new_worlds = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_new_worlds.dds"
+	modifier = {
+		category_new_worlds_research_speed_mult = 0.15
+		category_statecraft_research_speed_mult = 0.05
+		category_biology_research_speed_mult = 0.05
+		category_military_theory_research_speed_mult = 0.05
+		category_psionics_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category environmental systems (done in tech-script)
+
+	ai_categories = {
+		society
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_statecraft = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_statecraft.dds"
+	modifier = {
+		category_statecraft_research_speed_mult = 0.15
+		category_new_worlds_research_speed_mult = 0.05
+		category_biology_research_speed_mult = 0.05
+		category_military_theory_research_speed_mult = 0.05
+		category_psionics_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_biology"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category financial theory (done in tech-script)
+
+	ai_categories = {
+		society
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_biology = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_biology.dds"
+	modifier = {
+		category_biology_research_speed_mult = 0.15
+		category_statecraft_research_speed_mult = 0.05
+		category_new_worlds_research_speed_mult = 0.05
+		category_military_theory_research_speed_mult = 0.05
+		category_psionics_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_military_theory"
+	}
+	# higher chance to generate techs in category biology (done in tech-script)
+
+	ai_categories = {
+		society
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_military_theory = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_military_theory.dds"
+	modifier = {
+		category_military_theory_research_speed_mult = 0.15
+		category_biology_research_speed_mult = 0.05
+		category_statecraft_research_speed_mult = 0.05
+		category_new_worlds_research_speed_mult = 0.05
+		category_psionics_research_speed_mult = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_expertise_materials"
+		"leader_trait_expertise_propulsion"
+		"leader_trait_expertise_voidcraft"
+		"leader_trait_expertise_industry"
+		"leader_trait_expertise_field_manipulation"
+		"leader_trait_expertise_particles"
+		"leader_trait_expertise_psionics"
+		"leader_trait_expertise_computing"
+		"leader_trait_expertise_new_worlds"
+		"leader_trait_expertise_statecraft"
+		"leader_trait_expertise_biology"
+	}
+	# higher chance to generate techs in category military organization (done in tech-script)
+
+	ai_categories = {
+		society
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}

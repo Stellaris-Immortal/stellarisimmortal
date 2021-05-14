@@ -1,0 +1,44 @@
+leader_trait_ecologist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ecologist.dds"
+	modifier = {
+		planet_jobs_upkeep_mult = -0.10
+	}
+	leader_potential_add = {
+		NOT = { from = { has_authority = "auth_machine_intelligence" } }
+		NOT = { has_trait = trait_repugnant }
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+}
+
+trait_ruler_ship_focus = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_corvette_focus.dds"
+	leader_potential_add = {
+		NOT = { from = { has_policy_flag = no_wars } }
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.10
+		starbase_shipyard_build_speed_mult = 0.10
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}
+
+trait_ruler_environmentalist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_environmentalist.dds"
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	modifier = {
+		planet_jobs_upkeep_mult = -0.10
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+}

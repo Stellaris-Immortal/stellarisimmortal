@@ -1,0 +1,6 @@
+﻿l_english:
+# Decision Modifiers
+ overconsumption:0 "Overconsumption"
+ overconsumption_desc:0 "You cannot control your own population by force, but it can be distracted by consumption."
+ overpopulated:0 "Overpopulation"
+ overpopulated_desc:0 "Futurists don't consider overpopulation one of the issues of the future. They consider it the issue of the future."

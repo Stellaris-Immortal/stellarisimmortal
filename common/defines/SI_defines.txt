@@ -1,0 +1,13 @@
+
+	NInterface = {
+		NUM_DISTRICT_BOXES_TO_SHOW 			= 20 	# How many district boxes will be shown before we show " 12/20" instead
+	}
+
+	NGameplay = {
+		MAX_PLANET_BUILDING_SLOTS			= 6
+		POP_CRIME							= 5		# From each pop with happiness (scaled inversely to happiness)
+	}
+	
+	NPop = {
+		REQUIRED_POP_GROWTH_SCALE			= 0
+	}

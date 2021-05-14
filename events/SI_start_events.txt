@@ -1,0 +1,17 @@
+namespace = SI_start
+
+### Reinitialize Worlds
+event = {
+	id = SI_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { exists = capital_scope }
+			capital_scope = {
+				SI_modify_starting_structures = yes
+			}
+		}
+	}
+}

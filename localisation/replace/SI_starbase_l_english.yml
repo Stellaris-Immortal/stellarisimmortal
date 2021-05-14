@@ -1,0 +1,23 @@
+﻿l_english:
+ # Starbase Modules
+ sm_solar_panels:0 "Solar Panels"
+ sm_solar_panels_desc: "Powerful solar panels convert solar energy to energy credits we can spend."
+ requires_energy_station:0 "$TRIGGER_FAIL$§RRequires a star in system."
+ sm_mining_terminal:0 "Mining Terminal"
+ requires_mineral_station:0 "$TRIGGER_FAIL$§RRequires an asteroid in system."
+ sm_research_terminal:0 "Research Terminal"
+ sm_research_terminal_desc: "Remote terminal for compiling observational data from space."
+ # Starbase Buildings
+ sm_supercapacitor_system:0 "Supercapacitor System"
+ sm_supercapacitor_system_desc: "Capacitors that usually boost the energy power of a particular module."
+ supercapacitor_system_tooltip:0 "Solar Panels produce £energy£ §YEnergy§! §G+4§!"
+ sm_mining_hub:0 "Mining Hub"
+ sm_mining_hub_desc:0 "This hub increases the station's capacity to collect, store, and transport minerals."
+ mining_hub_tooltip:0 "Mining Terminals Produce: £minerals£ §G+4§!"
+ sm_sensor_array:0 "Sensor Array"
+ sm_sensor_array_desc:0 "Advanced sensor system that increases observational data sent to research terminals."
+ sensor_array_tooltip:0 "Research Terminals Produce: £science£ §G+1§!"
+ # Starbase Types
+ sresearch_station: "Skylab"
+ smining_hub: "SkyMine"
+ ssolar_station: "PowerSat"

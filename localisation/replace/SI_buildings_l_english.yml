@@ -1,0 +1,33 @@
+﻿l_english:
+# Trade
+ building_commercial_zone_effect_desc:0 "Clerks produce Trade Value +2 and Amenities +1"
+ building_commercial_megaplex_effect_desc:0 "Clerks produce Trade Value +4 and Amenities +2"
+# Amenities
+ building_holo_theatres_effect_desc:0 "Entertainers and Duelists produce Amenities +1 for every planet."
+ building_hyper_entertainment_forum_effect_desc:0 "Entertainers and Duelists produce Amenities +2 for every planet."
+ building_clinic_effect_desc:0 "Healthcare workers provide Growth and Assembly Speed +0.025, Ameneities +2, and consume Energy +1."
+ building_hospital_effect_desc:0 "Healthcare workers provide Growth and Assembly Speed +0.05, Ameneities +4, and consume Consumer Goods +1."
+ building_spawning_pool_effect_desc:0 "Spawning Drones produce Pop Assembly Speed +1, Amenities +2, and consume Food +2."
+ building_spawning_pool_lithoid_effect_desc:0 "Spawning Drones produce Pop Assembly Speed +1, Amenities +2, and consume Minerals +2."
+# Assembly
+ building_robot_assembly_plant_effect_desc:0 "Roboticists produce Robot Assembly +1 and consume Alloys +1."
+ building_machine_assembly_plant_effect_desc:0 "Replicators produce Robot Assembly +1 and consume Alloys +1."
+ building_machine_assembly_complex_effect_desc:0 "Replicators produce Robot Assembly +2 and consume Alloys +2."
+# Government
+ building_bureaucratic_1_effect_desc:0 "Bureaucrats produce Admin Cap +5 and consume Consumer Goods +1."
+ building_bureaucratic_1_effect_desc:0 "Bureaucrats produce Admin Cap +10 and consume Consumer Goods +2."
+ building_precinct_house_effect_desc:0 "Enforcers produce Crime -10, Defensive Army +1, and consume Energy +1."
+ building_hall_judgment_effect_desc:0 "Enforcers produce Crime -20, Defensive Army +2, and consume Energy +2."
+ building_uplink_node_effect_desc:0 "Coordinators produce Admin Cap +5 and consume Energy +2."
+ building_network_junction_effect_desc:0 "Coordinators produce Admin Cap +10 and consume Energy +4."
+ building_system_conflux_effect_desc:0 "Coordinators produce Admin Cap +15 and consume Energy +6."
+ building_sentinel_posts_effect_desc:0 "Sentry Drones produce Deviancy -20, Defensive Army +2, and consume Energy +2."
+# Military
+ building_military_academy_effect_desc:0 "Soldiers produce Defensive Armies +1."
+ building_stronghold_effect_desc:0 "Soldiers produce Naval Cap +2 and Defensive Armies +1."
+ building_fortress_effect_desc:0 "Soldiers produce Naval Cap +4 and Defensive Armies +2."
+ building_stronghold_gestalt_effect_desc:0 "Warrior Drones produce Naval Cap +2 and Defensive Armies +1."
+ building_fortress_gestalt_effect_desc:0 "Warrior Drone produce Naval Cap +4 and Defensive Armies +2."
+# Ascension
+ building_clone_vats_effect_desc:0 "Residential Districts have Healthcare Jobs -1 and Pop Assembly Jobs +1"
+ 

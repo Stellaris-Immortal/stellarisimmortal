@@ -1,0 +1,64 @@
+decision_overconsumption = {
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+	
+	potential = {
+		owner = { is_regular_empire = yes }
+		NOT = { has_modifier = overconsumption }
+	}
+	
+	effect = {
+		custom_tooltip = decision_overconsumption_tooltip
+		add_modifier = { modifier = overconsumption days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops > 19
+		}
+	}
+}
+
+decision_stop_overconsumption = {
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 10
+		}
+	}
+	
+	potential = {
+		has_modifier = overconsumption
+	}
+	
+	effect = {
+		custom_tooltip = decision_stop_overconsumption_tooltip
+		remove_modifier = overconsumption
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 10
+			has_modifier = overpopulated
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops < 19
+		}
+	}
+}

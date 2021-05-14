@@ -1,0 +1,50 @@
+overconsumption = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+	icon_frame = 1
+	planet_pops_organics_food_upkeep_mult = 0.25
+	planet_pops_organics_minerals_upkeep_mult = 0.25
+	planet_pops_consumer_goods_upkeep_mult = 0.25
+	pop_growth_speed = 0.25
+}
+
+overpopulated = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_overpopulated.dds"
+	icon_frame = 3
+	pop_growth_speed = -0.50
+	planet_emigration_push_add = 50
+}
+
+crime_none = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_none.dds"
+	icon_frame = 1
+}
+
+crime_low = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_low.dds"
+	icon_frame = 2
+	job_criminal_per_pop = 0.02
+}
+
+crime_mod = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_mod.dds"
+	icon_frame = 2
+	job_criminal_per_pop = 0.04
+}
+
+crime_high = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_high.dds"
+	icon_frame = 3
+	job_criminal_per_pop = 0.06
+}
+
+crime_ext = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_ext.dds"
+	icon_frame = 3
+	job_criminal_per_pop = 0.08
+}
+
+crime_max = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime_max.dds"
+	icon_frame = 3
+	job_criminal_per_pop = 0.10
+}

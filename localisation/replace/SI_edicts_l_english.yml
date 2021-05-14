@@ -1,0 +1,8 @@
+﻿l_english:
+# Job Modifiers
+ edict_combustive_motes:0 "Combustive Motes"
+ edict_combustive_motes_desc:0 "By using volatile motes to construct specialized materials, our ships will have greater destructive capabilities and for effective defenses."
+ edict_crystal_optics:0 "Optical Crystals"
+ edict_crystal_optics_desc:0 "By increasing our ships' access to rare crystals, we are able to increase the damage of their energy weapons as well as improve the precision of their sensors."
+ edict_kinetic_gases:0 "Kinetic Gases"
+ edict_kinetic_gases_desc:0 "Various exotic gases also function as excellent fuel for sublight travel and shield performance, although perhaps not the most economical alternative."

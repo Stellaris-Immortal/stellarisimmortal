@@ -1,0 +1,13 @@
+﻿l_english:
+# Triggers
+ DOMESTIC_JOB_TRIGGER:0 "This job can only be worked by free Pops with at least Good Living Standards."
+# Job Modifiers
+ mod_planet_metallurgists_consumer_goods_produces_mult:0 "$job_foundry_plural$ £consumer_goods£ $consumer_goods$ $rt_production$"
+ mod_planet_metallurgists_alloys_produces_mult:0 "$job_foundry_plural$ £alloys£ $alloys$ $rt_production$"
+ mod_planet_metallurgists_minerals_upkeep_add:0 "$job_foundry_plural$ £minerals£ $minerals$ Upkeep"
+ mod_planet_researchers_unity_produces_mult:0 "£unity£ $unity$ from £job_researcher£ $job_researcher_plural$"
+ mod_planet_researchers_consumer_goods_upkeep_add:0 "£job_researcher£ $job_researcher_plural$ £consumer_goods£ $consumer_goods$ Upkeep"
+ mod_planet_culture_workers_unity_produces_add:0 "£job_culture_worker£ $job_culture_worker_plural$ £unity£ $unity$ $rt_production$"
+ mod_planet_culture_workers_society_research_produces_add:0 "£job_culture_worker£ $job_culture_worker_plural$ £society_research£ $society_reaearch$ $rt_production$"
+ mod_planet_culture_workers_consumer_goods_upkeep_add:0 "£job_culture_worker£ $job_culture_worker_plural$ £consumer_goods£ $consumer_goods$ Upkeep"
+ mod_planet_entertainers_unity_produces_add:0 "£job_entertainer£ $job_entertainer$ £unity£ $unity$ $rt_production$"

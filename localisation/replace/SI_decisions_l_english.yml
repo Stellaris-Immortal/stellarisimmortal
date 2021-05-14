@@ -1,0 +1,8 @@
+﻿l_english:
+# Decisions
+ decision_overconsumption:0 "Overconsumption"
+ decision_overconsumption_desc:0 "Happiness is, after all, a consumption ethic."
+ decision_overconsumption_tooltip:0 "Increases §YPop Upkeep§! and §YPop Growth§! by §G+25%§!."
+ decision_stop_overconsumption:0 "Stop Overconsumption"
+ decision_stop_overconsumption_desc:0 "Overconsumption and overpopulation underlie every environmental problem we face today."
+ decision_stop_overconsumption_tooltip:0 "Reduces §YPop Upkeep§! and §YPop Growth§! by §R-25%§!."

@@ -1,0 +1,51 @@
+
+SI_modify_starting_structures = {
+	# Regular Empire Starts
+	if = {
+		limit = { owner = { is_regular_empire = yes } }
+		remove_district = district_city
+		remove_building = building_bureaucratic_1
+		remove_building = building_research_lab_1
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						is_spiritualist = no
+						is_megacorp = yes
+					}
+				}
+			}
+			remove_building = building_commercial_zone
+			add_district_and_planet_size_if_needed_effect = { district = district_commercial }
+		}
+		else = {
+			add_district_and_planet_size_if_needed_effect = { district = district_academic }
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_government }
+		add_district_and_planet_size_if_needed_effect = { district = district_academic }
+	}
+	
+	# Hive Empire Starts
+	if = {
+		limit = { owner = { is_hive_empire = yes } }
+		remove_district = district_hive
+		remove_building = building_hive_node
+		remove_building = building_research_lab_1
+		remove_building = building_spawning_pool
+		add_district_and_planet_size_if_needed_effect = { district = district_spawning }
+		add_district_and_planet_size_if_needed_effect = { district = district_academic }
+		add_district_and_planet_size_if_needed_effect = { district = district_maintenance }
+	}
+	
+	# Machine EMpire Starts
+	if = {
+		limit = { owner = { is_machine_empire = yes } }
+		remove_district = district_nexus
+		remove_building = building_machine_assembly_plant
+		remove_building = building_uplink_node
+		remove_building = building_research_lab_1
+		add_district_and_planet_size_if_needed_effect = { district = district_assembly }
+		add_district_and_planet_size_if_needed_effect = { district = district_academic }
+		add_district_and_planet_size_if_needed_effect = { district = district_maintenance }
+	}
+}
