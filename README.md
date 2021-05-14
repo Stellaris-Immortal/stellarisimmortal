@@ -4,7 +4,7 @@ Stellaris Immortal is a total rebuild mod of Stellaris, focusing on speed, balan
  
 ## How to contribute
  
-Have an idea? Great! Head over to our [discord](https://discord.gg/Jty9qk8) to discuss it with the devs. You can also check out the issues page on [Github](https://github.com/gebnar/retile/issues) and see if we've already talked about this!
+Have an idea? Great! Head over to our [discord](https://discord.gg/Jty9qk8) to discuss it with the devs.
 
 ### Submitting pull requests
 If you aren't a member of the mod team, and want to contribute, that's awesome (and easy!). Just fork the repository (there should be a little button on the top right saying "fork"), clone it to your machine, make all the changes you want, commit and push back to GitHub.
@@ -13,7 +13,7 @@ Then, go back to our repository, click the "submit pull request" buttton (on the
 
 ## Submitting bug reports
  
-Check out the issues page on [Github](https://github.com/gebnar/retile/issues) and see if we've already talked about this! If not, please submit a report! The more info you give, the faster we can solve it. Its especially helpful if you tell us what kind of mods you use - SI is incompatible with most content mods, so your problem might start there.
+Check out the issues page on [Github](https://github.com/gebnar/stellarisimmortal/issues) and see if we've already talked about this!
  
  ## Installation
 
@@ -27,7 +27,7 @@ You can also install by downloading this repository:
 ### Windows
  - Choose the branch you want. We recommend you use the Staging branch, for the latest "stable" content.
  - Clone the branch into your local mod folder `C:/Users/{YOUR_USER}/Documents/Paradox Interactive/Stellaris/mod`, or download a zip and extract it there.
- - Rename the downloaded folder to "retile" if it is named anything else (such as "stellarisimmortal-staging")
+ - Rename the downloaded folder to "stellarisimmortal" if it is named anything else (such as "stellarisimmortal-staging")
  - Move the "stellarisimmortal.mod" file from the "stellarisimmortal" folder out into the mod folder.
  - When you're finished, you should see the following paths:
    - /mod/stellarisimmortal/readme.md
